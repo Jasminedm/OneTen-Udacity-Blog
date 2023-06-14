@@ -1,0 +1,73 @@
+@import url("./homeCSS/footer.css");
+@import url("./homeCSS/header.css");
+
+
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "hd"
+        "main"
+        "ft";
+    background-color: oldlace;
+    padding: 5%;
+}
+
+.content {
+    grid-area: main;
+    border: 10px solid black;
+    padding: 5%;
+    background-color: oldlace;
+    filter: drop-shadow(30px 10px 4px #c39cc9);
+}
+
+.nestedGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 300px;
+    border: 1px solid black;
+}
+.articleBlock{
+    padding: 0 10% 0 10%;
+}
+.blog {
+
+    background-image: url("../imgs/aiart.png");
+    background-size:contain;
+    border: 1px solid black;
+    height: 100%;
+}
+
+h1 {
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline;
+}
+
+p {
+    font-style: italic;
+
+}
+
+#circleImg {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-image: url("../imgs/HeadShot.jpeg");
+    background-size: cover;
+    border: 1px solid black;
+}
+
+.blogName {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+
+    padding: 5%;
+}
